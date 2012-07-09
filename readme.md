@@ -1,5 +1,7 @@
 ![coffee-lisp](https://github.com/victusfate/coffee-lisp/raw/master/coffee-lisp.png)
-CoffeeLisp is a little language that compiles into Common Lisp. Consider the versatility and power of Common Lisp, gracefully blended with the syntactic sugar of CoffeeScript, and you have an inkling of this project's essence and direction. I must admit that after starting to write this readme I found the [fact.lisp](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.lisp) source a little easier to reason about than the [fact.coffee](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.coffee) code.
+CoffeeLisp is a language that compiles into Common Lisp. Consider the versatility and power of Common Lisp, gracefully blended with the syntactic sugar of CoffeeScript, and you have an inkling of this project's essence and direction. I must admit that after starting to write this readme I found the [fact.lisp](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.lisp) source a little easier to reason about than the [fact.coffee](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.coffee) code. I'll have to work on tidying up the CoffeeScript Fixed Point Combinator.
+
+This is a work in progress, there's not yet a coffeescript to SBCL compiler! I'm blissfully deluding myself into believing that the process of writing the compiler will be joyful.
 ===
 
 coffeelisp will resemble coffeescript syntactically while supporting s-expressions, macros, rapid compilation and common lisps rich standard libraries
