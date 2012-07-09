@@ -4,11 +4,10 @@
 CoffeeLisp is a tiny (non-existant yet) language that compiles into Common Lisp. Consider the versatility and power of Common Lisp, gracefully blended with the syntactic sugar of CoffeeScript, and you have an inkling of this project's essence and direction. I must admit that after starting to write this readme I found the [fact.lisp](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.lisp) source a little easier to reason about than the [fact.coffee](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.coffee) code. I'll have to work on tidying up the CoffeeScript Fixed Point Combinator.
 
 This is a work in progress, there's not yet a coffeescript to SBCL compiler! I'm blissfully deluding myself into believing that the process of writing the compiler will be joyful.
------------
 
 coffeelisp will resemble coffeescript syntactically while supporting s-expressions, macros, rapid compilation and common lisps rich standard libraries
 
------------
+- - -
 
 <h2>CoffeeLisp Shall</h2> 
 
@@ -17,7 +16,7 @@ coffeelisp will resemble coffeescript syntactically while supporting s-expressio
  - incorporate all the incredible features of Common Lisp 
  - seek a minimal footprint to support the above
  
------------
+- - -
 <h2>examples</h2>
 [Sample Fixed Point Combinator in CoffeeScript](https://gist.github.com/3001897)
 note the spaces after f and before (x), <i>f (x)</i>
@@ -48,7 +47,7 @@ to yield the factorial
     (funcall (Y #'fac) 5) is equal to 120
 
 
------------
+- - -
 
 coffee lisp depends on:
  - [coffeescript](https://github.com/jashkenas/coffee-script/)
@@ -56,16 +55,15 @@ coffee lisp depends on:
  
 
 
------------
-
-<h2>License:</h2> 
+- - -
+<h2>CoffeeLisp License:</h2> 
 Released under the [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
-
+- - -
 <h2>CoffeeScript License</h2>
 MIT License
 
-
+- - -
 <h2>SBCL License information</h2>
 
 > SBCL is derived from CMU CL, and carries the same licensing terms, a mixture of BSD-style (for a few subsystems) and public domain (for the rest of the system).
