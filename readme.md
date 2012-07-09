@@ -33,7 +33,7 @@ and
 to yield the factorial
     y(fac)(5) is equal to 120
 
-[Common Lisp version<](http://rosettacode.org/wiki/Y_combinator#Common_Lisp)
+[Common Lisp version](http://rosettacode.org/wiki/Y_combinator#Common_Lisp)
 
     (defun Y (f) 
       ((lambda (x) (funcall x x)) 
