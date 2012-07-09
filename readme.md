@@ -20,8 +20,11 @@ coffeelisp will resemble coffeescript syntactically while supporting s-expressio
 <h2>examples</h2>
 [Sample Fixed Point Combinator in CoffeeScript](https://gist.github.com/3001897)
 note the spaces after f and before (x), <i>f (x)</i>
+    
     y = (f) -> ((g) -> f (x) -> g(g)(x))((g) -> f (x) -> g(g)(x))
+
 and
+
     fac = (factorial) ->
       (x) ->
         if x is 1 then return 1
@@ -31,6 +34,7 @@ to yield the factorial
     y(fac)(5) is equal to 120
 
 [Common Lisp version<](http://rosettacode.org/wiki/Y_combinator#Common_Lisp)
+
     (defun Y (f) 
       ((lambda (x) (funcall x x)) 
        (lambda (y) 
@@ -44,6 +48,7 @@ to yield the factorial
         (* n (funcall f (1- n))))))
 
 to yield the factorial 
+
     (funcall (Y #'fac) 5) is equal to 120
 
 
