@@ -1,8 +1,10 @@
 ![coffee-lisp](https://github.com/victusfate/coffee-lisp/raw/master/coffee-lisp.png)
-CoffeeLisp is a little language that compiles into Common Lisp. Consider the versatility and power of Common Lisp, gracefully blended with the syntactic sugar of CoffeeScript, and you have an inkling of this project's essence and direction.
+CoffeeLisp is a little language that compiles into Common Lisp. Consider the versatility and power of Common Lisp, gracefully blended with the syntactic sugar of CoffeeScript, and you have an inkling of this project's essence and direction. I must admit that after starting to write this readme I found the [fact.lisp](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.lisp) source a little easier to reason about than the [fact.coffee](https://github.com/victusfate/coffee-lisp/raw/master/samples/fact.coffee) code.
 ===
 
 coffeelisp will resemble coffeescript syntactically while supporting s-expressions, macros, rapid compilation and common lisps rich standard libraries
+
+-----------
 
 <h2>CoffeeLisp Shall</h2> 
 
@@ -12,11 +14,45 @@ coffeelisp will resemble coffeescript syntactically while supporting s-expressio
  - seek a minimal footprint to support the above
  
 -----------
+<h2>examples</h2>
+[Sample Fixed Point Combinator in CoffeeScript](https://gist.github.com/3001897)
+note the spaces after f and before (x), <i>f (x)</i>
+    y = (f) -> ((g) -> f (x) -> g(g)(x))((g) -> f (x) -> g(g)(x))
+and
+    fac = (factorial) ->
+      (x) ->
+        if x is 1 then return 1
+        x * factorial(x - 1)
+
+to yield the factorial
+    y(fac)(5) is equal to 120
+
+[Common Lisp version<](http://rosettacode.org/wiki/Y_combinator#Common_Lisp)
+    (defun Y (f) 
+      ((lambda (x) (funcall x x)) 
+       (lambda (y) 
+         (funcall f (lambda (&rest args) 
+              (apply (funcall y y) args))))))
+     
+    (defun fac (f) 
+      (lambda (n) 
+        (if (zerop n) 
+        1 
+        (* n (funcall f (1- n))))))
+
+to yield the factorial 
+    (funcall (Y #'fac) 5) is equal to 120
+
+
+-----------
 
 coffee lisp depends on:
  - [coffeescript](https://github.com/jashkenas/coffee-script/)
  - [steel bank common lisp](http://www.sbcl.org/) [github mirror](https://github.com/sbcl/sbcl)
  
+
+
+-----------
 
 <h2>License:</h2> 
 Released under the [MIT License](http://en.wikipedia.org/wiki/MIT_License)

@@ -1,0 +1,6 @@
+[submodule "coffee-script"]
+	path = coffee-script
+	url = git://github.com/jashkenas/coffee-script.git
+[submodule "sbcl"]
+	path = sbcl
+	url = git://github.com/sbcl/sbcl.git
