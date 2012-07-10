@@ -59,6 +59,10 @@ coffee lisp depends on:
  - [steel bank common lisp](http://www.sbcl.org/) [github mirror](https://github.com/sbcl/sbcl)
  
 
+- - -
+<h2>notes</h2>
+[CL-JavaScript](http://marijnhaverbeke.nl/cl-javascript/) looks cool (and would literally translate coffeescript compiled javascript to common lisp), but it's not exactly what this project is about. The goal is a hybrid language that looks and feels like coffeescript (s-expression will be space indent delimited as well as paranthetically defined for one liners) but is as powerful and capable of rapid execution (compilation) as sbcl.
+
 
 - - -
 <h2>CoffeeLisp License:</h2> 
