@@ -61,8 +61,13 @@ coffee lisp depends on:
 
 - - -
 <h2>notes</h2>
-[CL-JavaScript](http://marijnhaverbeke.nl/cl-javascript/) looks cool (and would literally translate coffeescript compiled javascript to common lisp), but it's not exactly what this project is about. The goal is a hybrid language that looks and feels like coffeescript (s-expression will be space indent delimited as well as paranthetically defined for one liners) but is as powerful and capable of rapid execution (compilation) as sbcl.
+[CL-JavaScript](http://marijnhaverbeke.nl/cl-javascript/) looks cool (and would literally translate coffeescript compiled javascript to common lisp), but it's not exactly what this project is about. The goal is a hybrid language that looks and feels like coffeescript, yet as powerful and capable of rapid execution (compilation) as sbcl. <a href="http://en.wikipedia.org/wiki/S-expression">S-expressions</a> will be space indent delimited as well as paranthetically defined for one liners, which may make them <a href="http://en.wikipedia.org/wiki/M-expression">M-expressions</a>. 
 
+<blockquote>
+  The project of defining M-expressions precisely and compiling them or at least translating them into S-expressions was neither finalized nor explicitly abandoned. It just receded into the indefinite future, and a new generation of programmers appeared who preferred internal notation to any FORTRAN-like or ALGOL-like notation that could be devised. ”
+  
+— John McCarthy[1], History of Lisp
+</blockquote>
 
 - - -
 <h2>CoffeeLisp License:</h2> 
